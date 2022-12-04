@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARUSA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="header-wrapper">
+        <header>
+          <div class="menu">
+            <button class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+            <a href="#">Shop</a>
+          </div>
+          <div class="logo">
+            <svg
+              max-width="119"
+              height="20"
+              viewBox="0 0 119 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.874 13.3377L19.8743 13.3377C20.2361 18.0902 24.3248 18.6422 24.3248 18.6422V18.8152H19.1041V13.326C18.4829 15.2303 17.1571 16.7288 15.13 17.8281C13.0706 18.9416 10.6476 19.5 7.86097 19.5C5.89334 19.5 4.23836 19.0642 2.89263 18.1993C1.54689 17.331 0.874023 16.0167 0.874023 14.2597C0.874023 11.0011 3.32081 9.37007 8.21439 9.37007H19.0312C18.4705 4.98441 15.6941 2.79158 10.7088 2.79158C6.3759 2.79158 3.5553 4.23531 2.24694 7.11936L1.9309 6.83674C2.58678 4.74946 3.70482 3.17294 5.28504 2.10376C6.86186 1.03459 8.75133 0.5 10.9534 0.5C13.808 0.5 16.0101 1.33763 17.5564 3.01631C19.1026 4.69498 19.874 7.13979 19.874 10.3541V13.3377ZM19.1332 13.2554V13.2348L19.127 13.2547L19.1332 13.2554ZM15.9422 15.5434C13.8114 16.6602 11.1437 17.2152 7.93573 17.2152L7.93233 17.2186C6.92643 17.2186 6.01228 17.1233 5.19329 16.936C4.37429 16.7487 3.64026 16.3674 2.99797 15.7919C2.35569 15.2165 2.03285 14.4844 2.03285 13.5923C2.03285 11.1986 4.07864 10.0034 8.17701 10.0034H19.1026C19.123 10.2384 19.1366 10.5891 19.1366 11.059C19.1366 12.9351 18.0729 14.4299 15.9422 15.5434ZM39.183 0.5C40.7073 0.5 42.4289 0.759066 44.3512 1.27379V6.98007H44.0688C44.0688 5.45294 43.487 4.29737 42.3268 3.50994C41.1666 2.72252 39.741 2.33051 38.0534 2.33051C34.4197 2.33051 31.7965 4.36214 30.177 8.42539V13.6374C30.4356 16.4803 31.9122 18.1472 34.6069 18.6381V18.8153H25.0088V18.6381C27.9859 18.0995 29.4727 16.1599 29.4727 12.8261V7.19141C29.4727 3.85764 27.9859 1.92146 25.0088 1.37946V1.20221H30.177V6.80622H30.2825C31.0786 4.59734 32.1878 2.99522 33.6066 1.99645C35.0253 0.99768 36.883 0.5 39.1796 0.5H39.183ZM68.8193 1.19152V12.8089C68.8193 16.1409 70.3049 18.0794 73.2794 18.6176V18.7948H68.1156V13.1973H67.9048C66.0793 17.398 62.9993 19.5 58.6649 19.5C55.8059 19.5 53.6404 18.6688 52.165 16.9994C50.6896 15.3334 49.9519 12.8805 49.9519 9.64055V7.17739C49.9519 5.43989 49.5134 4.09758 48.6363 3.14706C47.7592 2.19655 46.5558 1.60375 45.0362 1.36868V1.19152H50.693V8.93533C50.693 14.451 53.3514 17.2072 58.6683 17.2072C63.1421 17.2072 66.29 15.3198 68.119 11.5382V6.39722C67.9796 4.91863 67.4799 3.77052 66.6266 2.94606C65.7699 2.125 64.6413 1.59694 63.2373 1.36187V1.18471H68.8227L68.8193 1.19152ZM73.9642 17.2493C76.4267 18.7509 79.5261 19.5 83.2556 19.5C86.4947 19.5 89.0934 18.9927 91.0519 17.9712C93.0103 16.9531 93.9912 15.54 93.9912 13.7319C93.9912 13.0747 93.8516 12.5129 93.5689 12.043C93.2862 11.5731 92.9115 11.1918 92.4415 10.8989C91.9715 10.6061 91.2937 10.3609 90.4013 10.16C89.509 9.96255 88.6064 9.80932 87.6902 9.70377C86.774 9.59821 85.5785 9.48925 84.1003 9.37007C80.8136 9.13513 78.5316 8.78782 77.2543 8.33154C75.9771 7.87527 75.3368 7.10574 75.3368 6.02635C75.3368 3.63262 78.0343 2.43746 83.4327 2.43746C88.2658 2.43746 91.4436 3.50323 92.9694 5.63817H93.1465V2.4C90.6568 1.13333 87.5369 0.5 83.7835 0.5C80.708 0.5 78.3306 0.932437 76.6549 1.80072C74.9757 2.669 74.1379 3.9595 74.1379 5.67222C74.1379 6.72778 74.5193 7.56882 75.2823 8.18853C76.0452 8.81165 77.0942 9.25771 78.4328 9.5267C79.7713 9.7957 81.6242 10.0034 83.9947 10.143C87.3019 10.3541 89.5907 10.6878 90.8577 11.1441C92.1247 11.6004 92.7582 12.4176 92.7582 13.5889C92.7582 16.2414 89.7917 17.566 83.8551 17.566C79.0459 17.566 75.8068 16.5002 74.1413 14.3652H73.9642V17.2493ZM118.126 18.6422C118.126 18.6422 114.04 18.0905 113.676 13.3418V10.3541C113.676 7.13979 112.905 4.69498 111.358 3.01631C109.812 1.33763 107.61 0.5 104.755 0.5C102.553 0.5 100.664 1.03459 99.0871 2.10376C97.5069 3.17294 96.3888 4.74946 95.7329 6.83674L96.049 7.11936C97.3573 4.23531 100.178 2.79158 104.511 2.79158C109.496 2.79158 112.273 4.98441 112.833 9.37007H102.016C97.1228 9.37007 94.676 11.0011 94.676 14.2597C94.676 16.0167 95.3489 17.331 96.6946 18.1993C98.0404 19.0642 99.6954 19.5 101.663 19.5C104.45 19.5 106.873 18.9416 108.932 17.8281C110.958 16.7292 112.284 15.2313 112.905 13.3279V18.8152H118.126V18.6422ZM112.935 13.2348V13.2554L112.929 13.2547L112.935 13.2348ZM101.738 17.2152C104.946 17.2152 107.613 16.6602 109.744 15.5434C111.875 14.4299 112.939 12.9351 112.939 11.059C112.939 10.5891 112.925 10.2384 112.905 10.0034H101.979C97.8807 10.0034 95.8349 11.1986 95.8349 13.5923C95.8349 14.4844 96.1577 15.2165 96.8 15.7919C97.4423 16.3674 98.1763 16.7487 98.9953 16.936C99.8143 17.1233 100.728 17.2186 101.734 17.2186L101.738 17.2152Z"
+                fill="#FCFDFD"
+              />
+            </svg>
+          </div>
+          <div class="cart">
+            <a href="#">Bag</a>
+            <p>0</p>
+          </div>
+        </header>
+      </div>
+      <div class="description">
+        <h1>Seamless <span>furniture</span> with natural fabrics</h1>
+        <button>Shop all</button>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-description">
+        <div class="about-description-wrapper">
+          <h2>Creating <span>perfect</span> lines and imposing presence</h2>
+          <p>
+            Developed the concept of exclusivity, a Arusa features timeless
+            furniture, with natural fabrics, curved lines, plenty of mirrors and
+            classic design, which can be incorporated into any decor project.
+            The pieces enchant for their sobriety, to last for generations,
+            faithful to the shapes of each period, with a touch of the present.
+          </p>
+          <button>Read about us</button>
+          <img class="img-1" src="img/second1.png" alt="" />
+          <img class="img-2" src="img/second2.png" alt="" />
+          <img class="img-3" src="img/second3.png" alt="" />
+          <img class="img-4" src="img/second4.png" alt="" />
+          <img class="img-5" src="img/second5.png" alt="" />
+          <img class="img-6" src="img/second6.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-content">
+        <h4>Enjoy our feature products</h4>
+        <div class="feature-content_gallery">
+          <div class="feature-content_gallery-item">
+            <img src="img/feature1.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature2.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Century dashe</p>
+              <p>$1,799</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature3.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native light chaur</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature4.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Paola wood lamp</p>
+              <p>$5,990</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-content-button">
+          <a href="#">Shop all</a>
+        </div>
+        <div class="feature-content_wrapper">
+          <div class="feature-content_wrapper-page">
+            <div class="feature-content_wrapper-page_description">
+              <h4>Native light chair</h4>
+              <p>
+                Refinement Chair with Ripped Seat, made of retro Eucalyptus
+                wood, of great resistance, Kiln dried, made with a spike system
+                and painted with P.U. (Polyurethane) With its entire structure
+                painted in wood, it offers a lot of elegance to your environment
+                and when cleaning is very easy, as it is washable and light for
+                movement. Enough of receiving visitors and not having a place to
+                accommodate them. With the chair, your days as a host will be
+                marked by a lot of elegance and sophistication.
+              </p>
+              <p>VIEW PRODUCT</p>
+            </div>
+            <img src="img/feature5.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lookbook-intro">
+      <div class="lookbook-intro-wrapper">
+        <div class="lookbook-intro-item-1">
+          <img src="img/lookbookitem.png" alt="" />
+          <div class="lookbook-intro-item-description">
+            <p>Iglenix vase</p>
+            <p>$2,299</p>
+          </div>
+        </div>
+        <div class="lookbook-intro-item-2">
+          <img src="img/lookbookitem2.png" alt="" />
+          <div class="lookbook-intro-item-description">
+            <p>Atajux lamp</p>
+            <p>$2,399</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lookbook">
+      <div class="lookbook-wrapper">
+        <div class="lookbook-wrapper_section-1">
+          <h5>Lookbook</h5>
+        </div>
+        <div class="lookbook-wrapper_section-2">
+          <h3>Lookbook</h3>
+          <p>
+            The pieces stand out for their contemporary straight lines and
+            imposing presence. Current, following the world trend of the great
+            masters, the furniture stands out for its noble and innovative
+            materials, composing sophisticated and exclusive environments.
+          </p>
+        </div>
+        <div class="lookbook-wrapper_section-3">
+          <div class="lookbook-item_description">
+            <p>Item</p>
+            <p>Description</p>
+          </div>
+          <div class="lookbook-item_content-wrapper">
+            <div class="lookbook-item_content">
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="img\lookbookitemsmall.png"
+                />
+                <img src="img/carpet.png" alt="" />
+              </picture>
+              <div class="lookbook-item_content-description">
+                <p>See lookbook</p>
+                <p>Shop all</p>
+              </div>
+            </div>
+            <div class="lookbook-item-info-wrapper">
+              <div class="lookbook-item_info">
+                <p>Materials:</p>
+                <p>Ceramic, glass, iron, wood</p>
+              </div>
+              <div class="lookbook-item_info">
+                <p>Produced in:</p>
+                <p>Canada, Italy, United States</p>
+              </div>
+              <div class="lookbook-item_info item-3">
+                <p>Categories:</p>
+                <p>Decoration, lamp, furniture</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature container-feature-new">
+      <div class="feature-content">
+        <h4>Enjoy our feature products</h4>
+        <div class="feature-content_gallery">
+          <div class="feature-content_gallery-item">
+            <img src="img/feature6.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature7.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature8.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature9.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature10.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native iron chair</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature11.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Century dashe</p>
+              <p>$1,799</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature12.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Native light chaur</p>
+              <p>$4,990</p>
+            </div>
+          </div>
+          <div class="feature-content_gallery-item">
+            <img src="img/feature13.png" alt="" />
+            <div class="feature-content_gallery-item_description">
+              <p>Paola wood lamp</p>
+              <p>$5,990</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-content-button">
+          <a href="#">Shop all</a>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <div class="details-wrapper">
+        <div class="details-info">
+          <h2>Every detail matter</h2>
+          <span>
+            WE ARE SPECIALIZED IN ADORNMENTS, THAT BRING CHARM TO ANY
+            ENVIRONMENT.
+          </span>
+          <p>
+            There are multiples of high quality pieces, with styles that
+            transition from classic to contemporary. An exclusive selection of
+            lampshades, vases, murals, pillows, paintings and many gifts to
+            compose great projects. In order selection, a mix of basic style,
+            stricter customization and more compact dimensions, composing
+            sophisticated and exclusive environments.
+          </p>
+        </div>
+      </div>
+      <div class="details_images-wrapper">
+        <div class="details-title">
+          <h5>Details</h5>
+        </div>
+        <img class="details-images_main" src="img/imagesmain.png" alt="" />
+        <div class="details-images_bottom-images-wrapper">
+          <img class="top-image" src="img/imagessecondary1.png" alt="" />
+          <img class="bottom-image" src="img/imagessecondary2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="details-feature">
+      <div class="details-feature_image">
+        <img src="img/details-feature-center.png" alt="" />
+      </div>
+    </div>
+    <div class="article">
+      <div class="article_main-title">
+        <h4>Enjoy our articles</h4>
+      </div>
+      <div class="article-wrapper">
+        <h5>Reader stories</h5>
+        <div class="article-wrapper_content">
+          <h3>Manhattan Pià-terre for a new Chicago apartment</h3>
+          <p>
+            Interior designer Sarah Vaile remembers eyeing a New York City
+            apartment—one with bold colors and a personality as distinct as its
+            chic owner—in a 2014 issue of House Beautiful, and tucking it away
+            for future design inspiration. Years later, in a serendipitous turn
+            of events, the woman she&#8242;d seen in the magazine—a stylish
+            figure now in her 30s—just moved to Chicago.
+          </p>
+          <a href="#">Read article</a>
+        </div>
+
+        <img src="img/article.png" alt="" />
+      </div>
+      <div class="article-button">
+        <a href="#">See all articles</a>
+      </div>
+    </div>
+    <section class="articles">
+      <div class="articles-wrapper">
+        <article class="articles-wrapper_content">
+          <img src="img/article1.png" alt="" />
+          <div class="articles-wrapper_content-description">
+            <h5>Inside a playful, bohemian beach house on Martha's Vineyard</h5>
+            <p>
+              I would follow Jessica to the end of the Earth,” Johanna Hynes
+              says, referring to her designer, Jessica Stambaugh. The
+              Nashville-based principal of JS Interiors designed Hynes’ Boston
+              wellness studio, Asana Charlestown, her family’s townhouse—and
+              most recently, their beach chalet in Katama on Martha’s Vineyard.
+            </p>
+            <a href="#">Read article</a>
+          </div>
+        </article>
+        <article class="articles-wrapper_content">
+          <img src="img/article2.png" alt="" />
+          <div class="articles-wrapper_content-description">
+            <h5>Modern Texas home is beautiful and completely kid-friendly</h5>
+            <p>
+              I would follow Jessica to the end of the Earth,” Johanna Hynes
+              says, referring to her designer, Jessica Stambaugh. The
+              Nashville-based principal of JS Interiors designed Hynes’ Boston
+              wellness studio, Asana Charlestown, her family’s townhouse—and
+              most recently, their beach chalet in Katama on Martha’s Vineyard.
+            </p>
+            <a href="#">Read article</a>
+          </div>
+        </article>
+        <article class="articles-wrapper_content">
+          <img src="img/article3.png" alt="" />
+          <div class="articles-wrapper_content-description">
+            <h5>Tudor-style home in Chicago's North Shore is chock-full</h5>
+            <p>
+              I would follow Jessica to the end of the Earth,” Johanna Hynes
+              says, referring to her designer, Jessica Stambaugh. The
+              Nashville-based principal of JS Interiors designed Hynes’ Boston
+              wellness studio, Asana Charlestown, her family’s townhouse—and
+              most recently, their beach chalet in Katama on Martha’s Vineyard.
+            </p>
+            <a href="#">Read article</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="signup">
+      <div class="signup-wrapper">
+        <h2>Be part of our club for discount</h2>
+        <input placeholder="Your email" type="email" />
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer>
+        <div class="footer-section-wrapper">
+          <div class="footer-section">
+            <a href="">Store</a>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Journal</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <a href="">Shop</a>
+            <ul>
+              <li>All</li>
+              <li>Lookbook</li>
+              <li>Collections</li>
+              <li>Featured</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <a href="">Collections</a>
+            <ul>
+              <li>Decors</li>
+              <li>Furnitures</li>
+              <li>Ceramic</li>
+              <li>Lamps</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <a href="">Help</a>
+            <ul>
+              <li>Contact</li>
+              <li>Login & Account</li>
+              <li>Privacy Policy</li>
+              <li>Refund Policy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <svg
+            max-width="1360"
+            max-height="221"
+            viewBox="0 0 1360 221"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M220.218 148.792L220.221 148.792C224.413 203.875 271.803 210.274 271.803 210.274V212.278H211.293V148.661C204.093 170.731 188.727 188.099 165.232 200.84C141.363 213.745 113.28 220.218 80.9815 220.218C58.1759 220.218 38.994 215.166 23.3964 205.142C7.7988 195.078 0 179.844 0 159.48C0 121.712 28.3593 102.808 85.0779 102.808H210.45C203.951 51.9761 171.771 26.5603 113.989 26.5603C63.769 26.5603 31.0771 43.2937 15.9127 76.721L12.2496 73.4454C19.8515 49.253 32.8101 30.9805 51.1255 18.5883C69.4015 6.19609 91.3011 0 116.825 0C149.91 0 175.434 9.70852 193.355 29.165C211.277 48.6216 220.218 76.9578 220.218 114.213V148.792ZM211.631 147.838V147.601C211.618 147.644 211.604 147.687 211.591 147.729L211.559 147.83L211.631 147.838ZM174.646 174.359C149.95 187.303 119.03 193.736 81.8481 193.736L81.8087 193.776C70.1498 193.776 59.5545 192.671 50.062 190.5C40.5695 188.33 32.0617 183.909 24.6174 177.24C17.1731 170.57 13.4313 162.085 13.4313 151.745C13.4313 124.001 37.1428 110.148 84.6446 110.148H211.277C211.513 112.871 211.671 116.936 211.671 122.383C211.671 144.128 199.342 161.454 174.646 174.359ZM444.015 0C461.682 0 481.636 3.00269 503.916 8.96855V75.1067H500.643C500.643 57.4066 493.9 44.013 480.453 34.8865C467.005 25.7599 450.482 21.2163 430.923 21.2163C388.807 21.2163 358.402 44.7637 339.632 91.8585V152.268C342.629 185.218 359.743 204.538 390.975 210.227V212.282H279.73V210.227C314.236 203.985 331.469 181.504 331.469 142.865V77.5562C331.469 38.9164 314.236 16.4753 279.73 10.1933V8.13886H339.632V73.0917H340.854C350.082 47.4898 362.937 28.9206 379.382 17.3445C395.826 5.76832 417.357 0 443.976 0H444.015ZM787.511 8.01354V142.664C787.511 181.282 804.729 203.75 839.206 209.989V212.043H779.355V147.166H776.912C755.753 195.853 720.055 220.217 669.818 220.217C636.681 220.217 611.582 210.582 594.481 191.233C577.381 171.924 568.831 143.493 568.831 105.941V77.3922C568.831 57.2538 563.748 41.6959 553.582 30.6791C543.416 19.6622 529.468 12.7915 511.855 10.0669V8.01354H577.42V97.7674C577.42 161.697 608.232 193.642 669.857 193.642C721.71 193.642 758.196 171.766 779.394 127.935V68.3496C777.779 51.2123 771.987 37.9052 762.097 28.3493C752.167 18.833 739.086 12.7125 722.813 9.98789V7.93457H787.55L787.511 8.01354ZM847.147 194.131C875.688 211.535 911.612 220.218 954.838 220.218C992.38 220.218 1022.5 214.337 1045.2 202.498C1067.9 190.698 1079.27 174.319 1079.27 153.363C1079.27 145.746 1077.65 139.234 1074.37 133.788C1071.1 128.342 1066.75 123.922 1061.31 120.528C1055.86 117.134 1048 114.292 1037.66 111.964C1027.32 109.675 1016.86 107.899 1006.24 106.675C995.617 105.452 981.761 104.189 964.628 102.808C926.534 100.085 900.084 96.0591 885.281 90.7708C870.477 85.4824 863.056 76.5632 863.056 64.0526C863.056 36.3083 894.321 22.4559 956.891 22.4559C1012.91 22.4559 1049.74 34.8086 1067.43 59.5535H1069.48V22.0218C1040.62 7.34059 1004.46 0 960.957 0C925.31 0 897.755 5.01212 878.333 15.0758C858.871 25.1396 849.16 40.097 849.16 59.9482C849.16 72.1825 853.581 81.9305 862.424 89.1132C871.267 96.3354 883.425 101.505 898.94 104.623C914.454 107.741 935.929 110.148 963.405 111.766C1001.74 114.213 1028.26 118.081 1042.95 123.369C1057.63 128.658 1064.98 138.129 1064.98 151.706C1064.98 182.449 1030.59 197.801 961.786 197.801C906.045 197.801 868.503 185.449 849.199 160.704H847.147V194.131ZM1359 210.274C1359 210.274 1311.63 203.878 1307.42 148.829V114.213C1307.42 76.9578 1298.48 48.6216 1280.56 29.165C1262.64 9.70852 1237.12 0 1204.03 0C1178.51 0 1156.61 6.19609 1138.33 18.5883C1120.02 30.9805 1107.06 49.253 1099.46 73.4454L1103.12 76.721C1118.28 43.2937 1150.98 26.5603 1201.19 26.5603C1258.98 26.5603 1291.16 51.9761 1297.66 102.808H1172.28C1115.57 102.808 1087.21 121.712 1087.21 159.48C1087.21 179.844 1095 195.078 1110.6 205.142C1126.2 215.166 1145.38 220.218 1168.19 220.218C1200.49 220.218 1228.57 213.745 1252.44 200.84C1275.93 188.102 1291.29 170.74 1298.49 148.678V212.278H1359V210.274ZM1298.84 147.601V147.838L1298.77 147.83L1298.84 147.601ZM1169.05 193.736C1206.24 193.736 1237.16 187.303 1261.85 174.359C1286.55 161.454 1298.88 144.128 1298.88 122.383C1298.88 116.936 1298.72 112.871 1298.48 110.148H1171.85C1124.35 110.148 1100.64 124.001 1100.64 151.745C1100.64 162.085 1104.38 170.57 1111.82 177.24C1119.27 183.909 1127.78 188.33 1137.27 190.5C1146.76 192.671 1157.36 193.776 1169.01 193.776L1169.05 193.736Z"
+              fill="#FCFDFD"
+            />
+          </svg>
+        </div>
+        <div class="footer-copyright">
+          <p>© ARUSA 2022 | AGATHA SAKOWICZ</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
