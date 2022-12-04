@@ -1,0 +1,118 @@
+@import "_variables.scss";
+
+
+.landing-page {
+  @include max-width();
+  background: url("img/main.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // HEADER
+  .header-wrapper {
+    padding: 16px;
+    max-width: 1296px;
+    margin: 0 auto;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .burger {
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          &:focus {
+            outline: 3px solid $oyster;
+            border-radius: 4px;
+          }
+          div {
+            width: 27px;
+            height: 1px;
+            margin: 5px 0;
+            background-color: $white;
+          }
+        }
+
+        a {
+          @include text-small();
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+
+      .cart {
+        @include text-small();
+        text-transform: uppercase;
+        color: $white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        p {
+          cursor: pointer;
+          text-align: center;
+          padding: 7px;
+          width: 30px;
+          height: 30px;
+          background: $opal;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .description {
+    height: 92%;
+    display: grid;
+    place-content: center;
+    gap: 48px;
+    word-wrap: break-word;
+
+    h1 {
+      text-align: center;
+      width: 745px;
+      color: $white;
+      -webkit-text-stroke: 1px #000000;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      span {
+        font-style: italic;
+      }
+
+      @media (max-width: 800px) {
+        @include h4();
+        max-width: 300px;
+        word-break: break-word;
+        width: 100%;
+        -webkit-text-stroke: 0 #000000;
+
+        span {
+          font-style: normal;
+        }
+      }
+    }
+
+    button {
+      @include default-primary();
+      text-transform: uppercase;
+      transition: 0.2s ease;
+      &:hover {
+        @include default-hover();
+      }
+      &:focus {
+        outline: 3px solid $oyster;
+        border-radius: 8px;
+      }
+      &:disabled {
+        @include primary-disabled();
+      }
+    }
+  }
+}

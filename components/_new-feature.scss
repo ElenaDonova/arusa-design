@@ -1,0 +1,29 @@
+@import "_variables.scss";
+
+// NEW FEATURE
+.container-feature-new {
+  background-color: $opal;
+  margin-top: 0;
+  padding-bottom: 54px;
+  @media (max-width: 1045px) {
+    padding-bottom: 32px;
+  }
+
+  .feature-content {
+    h4 {
+      color: $cloudy;
+    }
+
+    &_gallery {
+      p {
+        color: $cloudy;
+      }
+    }
+
+    &-button {
+      a {
+        color: $white;
+      }
+    }
+  }
+}

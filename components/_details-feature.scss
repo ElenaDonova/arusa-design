@@ -1,0 +1,25 @@
+@import "_variables.scss";
+
+// DETAILS FEATURE
+.details-feature {
+  margin: 0 auto;
+  max-width: 1442px;
+  height: 76vh;
+  background: url("img/details-feature.png") center/cover no-repeat;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+
+  &_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      width: 30%;
+      @media (max-width: 930px) {
+        display: none;
+      }
+    }
+  }
+}

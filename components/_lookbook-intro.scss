@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+// LOOKBOOK INTRO
+.lookbook-intro {
+  overflow: hidden;
+  @include max-width();
+  height: 100vh;
+  background: url("img/lookbokintro.png") center/cover no-repeat;
+  &-wrapper {
+    height: 100%;
+    position: relative;
+
+    .lookbook-intro-item-2 {
+      bottom: 173px;
+      right: 76px;
+    }
+
+    .lookbook-intro-item-1 {
+      left: 106px;
+      top: 105px;
+    }
+
+    .lookbook-intro-item-1,
+    .lookbook-intro-item-2 {
+      position: absolute;
+      background-color: $white;
+      padding: 20px;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+
+      .lookbook-intro-item-description {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          @include text-small();
+          color: $stormy;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        height: 301px;
+      }
+    }
+  }
+}

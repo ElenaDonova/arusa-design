@@ -1,0 +1,41 @@
+@import "_variables.scss";
+
+// FOOTER
+.footer-container {
+  @include max-width();
+  footer {
+    background-color: $opal;
+    .footer-section-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      .footer-section {
+        padding: 25px 56px 11px 56px;
+        @include text-small();
+        color: $cloudy;
+        flex: 1;
+        border: 0.5px solid $oyster;
+        a {
+          display: block;
+          margin-bottom: 16px;
+        }
+        li {
+          cursor: pointer;
+          padding-bottom: 14px;
+        }
+      }
+    }
+    .footer-logo {
+      padding: 92px 56px;
+    }
+    .footer-copyright {
+      p {
+        border-top: 1px solid $oyster;
+        border-bottom: 1px solid $oyster;
+        padding: 24px 0;
+        text-align: center;
+        @include text-small();
+        color: $cloudy;
+      }
+    }
+  }
+}

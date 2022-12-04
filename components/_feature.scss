@@ -1,0 +1,122 @@
+@import "_variables.scss";
+
+// FEATURE
+.feature {
+  max-width: 1440px;
+  margin: 30px auto 0 auto;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: 1139px) {
+      gap: 0;
+    }
+
+    h4 {
+      padding: 24px 0;
+      text-align: center;
+      border-top: 1px solid #bfbfbf;
+      border-bottom: 1px solid #bfbfbf;
+    }
+
+    &_gallery {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      @media (max-width: 1139px) {
+        gap: 0;
+      }
+
+      img {
+        width: 330px;
+        height: 331px;
+        @media (max-width: 700px) {
+          width: 100%;
+          max-width: 330px;
+          height: auto;
+        }
+      }
+
+      &-item {
+        @media (max-width: 1139px) {
+          padding: 8px;
+          border: 1px solid $oyster;
+        }
+
+        &_description {
+          display: flex;
+          justify-content: space-between;
+          text-transform: uppercase;
+          color: $stormy;
+          @include text-small();
+          @media (max-width: 700px) {
+            flex-direction: column;
+            gap: 24px;
+          }
+        }
+      }
+    }
+    &-button {
+      a {
+        color: $stormy;
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #bfbfbf;
+        border-bottom: 1px solid #bfbfbf;
+        padding: 24px 0;
+        background-color: transparent;
+        @include text-small();
+        text-transform: uppercase;
+      }
+    }
+
+    &_wrapper {
+      background-color: $opal;
+      @media (max-width: 900px) {
+        padding: 16px 16px 61px 16px;
+      }
+      &-page {
+        overflow: hidden;
+        display: flex;
+        background-color: $opal;
+
+        @media (max-width: 900px) {
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &_description {
+          display: grid;
+          place-content: center;
+          max-width: 405px;
+          margin: 0 auto;
+          gap: 23px;
+          flex-grow: 1;
+          flex-shrink: 0;
+
+          h4 {
+            color: $white;
+            border: none;
+            text-align: left;
+          }
+          p {
+            @include text-regular();
+            color: $oyster;
+          }
+        }
+
+        img {
+          width: 50%;
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

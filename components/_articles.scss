@@ -1,0 +1,149 @@
+@import "_variables.scss";
+
+// ARTICLES first article
+.article {
+  @include max-width();
+
+  &_main-title {
+    h4 {
+      padding: 24px 0;
+      text-align: center;
+      color: $stormy;
+      border-bottom: 1px solid $oyster;
+    }
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    &::after {
+      top: 0;
+      left: 60px;
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: $oyster;
+      @media (max-width: 1230px) {
+        display: none;
+      }
+    }
+
+    h5 {
+      height: 137px;
+      margin-bottom: -328px;
+      transform: rotate(270deg);
+      text-transform: uppercase;
+      @media (max-width: 1230px) {
+        display: none;
+      }
+    }
+    &_content {
+      margin: 0 auto;
+      margin-left: -100px;
+      display: grid;
+      gap: 56px;
+      flex: 2;
+      @media (max-width: 1230px) {
+        margin: 0;
+        padding: 0 33px;
+        place-content: center;
+        gap: 24px;
+      }
+      @media (max-width: 600px) {
+        padding: 16px;
+      }
+
+      h3 {
+        font-size: clamp(56px, 2.5vw, 24px);
+        @media (max-width: 1230px) {
+          @include h5;
+        }
+      }
+
+      p {
+        @include text-regular();
+        max-width: 641px;
+        // margin: 0 auto;
+      }
+      a {
+        @include text-small();
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  img {
+    padding: 30px 0;
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 70%;
+    }
+    @media (max-width: 650px) {
+      width: 95%;
+    }
+  }
+
+  &-button {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    @include text-small();
+    padding: 24px 0;
+    border-top: 1px solid $oyster;
+    border-bottom: 1px solid $oyster;
+  }
+}
+// ARTICLES
+
+.articles {
+  @include max-width();
+
+  &-wrapper {
+    margin-bottom: 10px;
+    border-bottom: 1px solid $oyster;
+    display: flex;
+    // gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_content {
+      padding: 10px;
+      img {
+        width: 454px;
+        max-width: 100%;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-right: 1px solid $oyster;
+        @media (max-width: 1420px) {
+          border-right: none;
+        }
+      }
+
+      &-description {
+        display: grid;
+        gap: 24px;
+        max-width: 454px;
+        padding-bottom: 70px;
+        h5 {
+          color: $stormy;
+        }
+        p {
+          padding: 0;
+          color: $opal;
+          @include text-regular();
+        }
+        a {
+          @include text-small();
+          text-transform: uppercase;
+          color: $stormy;
+        }
+      }
+    }
+  }
+}

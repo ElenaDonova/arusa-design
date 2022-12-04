@@ -1,0 +1,117 @@
+@import "_variables.scss";
+
+// LOOKBOK
+.lookbook {
+  @include max-width();
+
+  &-wrapper {
+    display: flex;
+    background-color: $opal;
+    @media (max-width: 1045px) {
+      flex-direction: column;
+    }
+
+    &_section-1 {
+      width: 62px;
+      margin-top: auto;
+      @media (max-width: 1100px) {
+        display: none;
+      }
+
+      h5 {
+        transform: rotate(270deg) translateX(42px);
+        color: $cloudy;
+      }
+    }
+
+    &_section-2 {
+      border-right: 1px solid $oyster;
+      border-left: 1px solid $oyster;
+      flex: 2;
+      h3 {
+        margin-top: 50px;
+        color: $cloudy;
+        text-align: center;
+      }
+      p {
+        margin: 409px auto 0 auto;
+        @include text-regular();
+        color: $oyster;
+        text-align: center;
+        width: 414px;
+        @media (max-width: 1045px) {
+          word-wrap: break-word;
+          word-break: break-word;
+          margin: 56px auto;
+          max-width: 343px;
+          width: 100%;
+        }
+      }
+    }
+
+    &_section-3 {
+      @include text-small();
+      text-transform: uppercase;
+
+      .lookbook-item_description {
+        display: flex;
+        justify-content: space-between;
+        color: $cloudy;
+        border-top: 1px solid $oyster;
+        border-bottom: 1px solid $oyster;
+        padding: 6px 8px 10px 21px;
+        margin-top: 20px;
+        @media (max-width: 1045px) {
+          display: none;
+        }
+      }
+
+      .lookbook-item_content-wrapper {
+        @media (max-width: 1045px) {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+      .lookbook-item_content {
+        background-color: #e0e0e0;
+        padding: 20px;
+        margin: 20px auto;
+        @media (max-width: 1045px) {
+          margin-top: 0;
+        }
+
+        img {
+          height: 422px;
+          display: block;
+          margin: 0 auto;
+          @media (max-width: 600px) {
+            height: 422px;
+            width: 303px;
+            max-width: 100%;
+          }
+        }
+
+        .lookbook-item_content-description {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          color: $stormy;
+        }
+      }
+      .lookbook-item-info-wrapper {
+        .lookbook-item_info {
+          display: flex;
+          justify-content: space-between;
+          color: $cloudy;
+          border-top: 1px solid $oyster;
+          padding: 6px 17px 10px 21px;
+        }
+
+        .item-3 {
+          border-bottom: 1px solid $oyster;
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+}

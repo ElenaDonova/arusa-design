@@ -1,0 +1,143 @@
+// FONT
+// -heading
+@import url("/fonts/reckless_neue/stylesheet.css");
+$font-heading: "Reckless Neue";
+// -paragraphs
+@import url("/fonts/neue_montreal/stylesheet.css");
+$font-paragraph: "Neue Montreal";
+
+// COLORS
+$white: #fcfdfd;
+$black: #000000;
+$stormy: #323334;
+$smoke: #4e4f51;
+$ash: #7c7f84;
+$linen: #f8f4e7;
+$oyster: #dfdedb;
+$cloudy: #f5f4f3;
+$opal: #384353;
+
+// TEXT STYLING:
+// -headings
+@mixin h1 {
+  font-family: $font-heading;
+  font-size: clamp(36px, 6.5vw, 96px);
+  line-height: 90%;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+@mixin h2 {
+  font-family: $font-heading;
+  font-size: clamp(36px, 5.5vw, 72px);
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+@mixin h3 {
+  font-weight: 400;
+  font-family: $font-heading;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+}
+
+@mixin h4 {
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+@mixin h5 {
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+// -paragraphs
+@mixin text-large {
+  font-family: "Neue Montreal";
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 10%;
+}
+
+@mixin text-regular {
+  font-family: "Neue Montreal";
+  font-size: 15px;
+  line-height: 19px;
+}
+
+@mixin text-small {
+  font-family: "Neue Montreal";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+
+@mixin caption {
+  font-family: "Neue Montreal";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+// BUTTONS
+@mixin default-primary {
+  width: 137px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: $linen;
+  color: $stormy;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+
+@mixin primary-disabled {
+  background-color: $cloudy;
+}
+
+@mixin default-hover {
+  background-color: $opal;
+  color: $cloudy;
+}
+
+@mixin outlined-default {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 36px;
+  border: 1px solid #dfdedb;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: $font-paragraph;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin outlined-focused {
+  outline: none;
+  -webkit-box-shadow: 6px 3px 20px 3px $oyster;
+  -moz-box-shadow: 6px 3px 20px 3px $oyster;
+  box-shadow: 6px 3px 20px 3px $oyster;
+}
+@mixin outlined-disabled {
+  border: 1px solid $cloudy;
+  color: cloudy;
+}
+
+// MARGINS VARIABLES
+
+@mixin max-width {
+  max-width: 1440px;
+  margin: 0 auto;
+}
